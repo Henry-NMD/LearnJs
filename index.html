@@ -6,17 +6,20 @@
     <title>Document</title>
     <script src="/js/index.js"></script>
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 </head>
 
 <body>
-    <form id = "frm">
-    <input id = "id1" onblur="upperCase()">
+    <form id = "frm" onsubmit="list()"> 
+    <input id = "id1" >
     <br>
     <input id = "id2"type="text">                   
     <br>
     </form>
-    <button type= "button" onclick="myFunction()">submit</button>  
+    <button type= "button" onclick="list()">submit</button>  
     <input type="button" onclick="reset()" value="Reset">
     <p id = "demo"></p>
+    
 </body>
 </html>

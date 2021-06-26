@@ -4,39 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/js/index.js">
+    <script src="/js/index.js"></script>
 </head>
 
 <body>
-    <script>
-        function myFunction() {
-            let x = document.getElementById("id1").value;
-            let y = document.getElementById("frm").value;
-            if (x == null || x == "") {
-                alert("input not null");
-                document.getElementById("id1").focus();
-            } else {
-                alert(y);
-            }
-    }
-
-    function upperCase() {
-        let x = document.getElementById("id1");
-        if (x.value == "") {
-            alert("please input!");
-            document.getElementById("id1").focus();
-            
-        }
-        x.value = x.value.toUpperCase();
-    }
-    function reset() {
-        document.getElementById("frm").reset();
-    }
-    </script>
     <form id = "frm">
     <input id = "id1" onblur="upperCase()">
     <br>
-    <input id = "id2"type="text">
+    <input id = "id2"type="text">                   
     <br>
     </form>
     <button type= "button" onclick="myFunction()">submit</button>  
